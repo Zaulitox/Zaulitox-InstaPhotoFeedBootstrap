@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Photo Feed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create a new post
+              </button>
+            </li>
+            <li class="nav-item dropdown ms-2">
+              <a class="dropdown-toggle btn btn-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+         
+        </div>
+      </div>
+    </nav>
+    <ul class="nav nav-tabs d-flex justify-content-center w-100" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+      </li>
+    
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="row mb-4">
+          <div class="col">
+            <img src="https://picsum.photos/500?random=1" width="100%">
+          </div>
+          <div class="col">
+            <img src="https://picsum.photos/500?random=2" width="100%">
+          </div>
+          <div class="col">
+            <img src="https://picsum.photos/500?random=3" width="100%">
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col">
+            <img src="https://picsum.photos/500?random=4" width="100%">
+          </div>
+          <div class="col">
+            <img src="https://picsum.photos/500?random=5" width="100%">
+          </div>
+          <div class="col">
+            <img src="https://picsum.photos/500?random=6" width="100%">
+          </div>
+        </div>
+        <div class="row align-items-start">
+          <div class="col">
+            <img src="https://picsum.photos/500?random=7" width="100%">
+          </div>
+          <div class="col">
+            <img src="https://picsum.photos/500?random=8" width="100%">
+          </div>
+          <div class="col">
+            <img src="https://picsum.photos/500?random=9" width="100%">
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <div class="d-flex flex-column w-100">
+          <div class="card mx-auto mt-4" style="width: 25rem;">
+            <div class="card-header bg-white d-flex justify-content-between">
+              <h4>
+                Example 1 
+              </h4>
+              <small>08/06</small>
+            </div>
+            <img src="https://picsum.photos/500?random=1" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">205 Likes</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card mx-auto mt-4" style="width: 25rem;">
+            <div class="card-header bg-white d-flex justify-content-between">
+              <h4>
+                Example 2 
+              </h4>
+              <small>08/06</small>
+            </div>
+            <img src="https://picsum.photos/500?random=2" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">205 Likes</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card mx-auto mt-4" style="width: 25rem;">
+            <div class="card-header bg-white d-flex justify-content-between">
+              <h4>
+                Example 3 
+              </h4>
+              <small>08/06</small>
+            </div>
+            <img src="https://picsum.photos/500?random=3" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">205 Likes</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card mx-auto mt-4" style="width: 25rem;">
+            <div class="card-header bg-white d-flex justify-content-between">
+              <h4>
+                Example 4
+              </h4>
+              <small>08/06</small>
+            </div>
+            <img src="https://picsum.photos/500?random=4" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">205 Likes</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card mx-auto mt-4" style="width: 25rem;">
+            <div class="card-header bg-white d-flex justify-content-between">
+              <h4>
+                Example 5 
+              </h4>
+              <small>08/06</small>
+            </div>
+            <img src="https://picsum.photos/500?random=5" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">205 Likes</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card mx-auto mt-4" style="width: 25rem;">
+            <div class="card-header bg-white d-flex justify-content-between">
+              <h4>
+                Example 6 
+              </h4>
+              <small>08/06</small>
+            </div>
+            <img src="https://picsum.photos/500?random=6" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">205 Likes</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card mx-auto mt-4" style="width: 25rem;">
+            <div class="card-header bg-white d-flex justify-content-between">
+              <h4>
+                Example 7 
+              </h4>
+              <small>08/06</small>
+            </div>
+            <img src="https://picsum.photos/500?random=7" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">205 Likes</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card mx-auto mt-4" style="width: 25rem;">
+            <div class="card-header bg-white d-flex justify-content-between">
+              <h4>
+                Example 8 
+              </h4>
+              <small>08/06</small>
+            </div>
+            <img src="https://picsum.photos/500?random=8" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">205 Likes</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card mx-auto mt-4" style="width: 25rem;">
+            <div class="card-header bg-white d-flex justify-content-between">
+              <h4>
+                Example 9 
+              </h4>
+              <small>08/06</small>
+            </div>
+            <img src="https://picsum.photos/500?random=9" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">205 Likes</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"> <b>Caption:</b>
+          </label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+        </div>
+        <button class="btn"><i class="fa-solid fa-camera"></i></button>
+        <button class="btn"><i class="fa-solid fa-location-dot"></i></button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>
